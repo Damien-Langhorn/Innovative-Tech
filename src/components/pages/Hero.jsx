@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
 
         <div className='flex justify-center'>
-            <img src={HeroImage} alt="Hero section image" className='w-4xl h-1/2 rotate-x-45' />
+            <img src={HeroImage} alt="Hero section image" className='w-auto max-h-150 rotate-x-45 px-10' />
         </div>
     </section>
 

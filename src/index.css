@@ -1,31 +1,30 @@
 @import "tailwindcss";
 
-.button-one{
-    border-radius: 2px;
-    background: #5068E2FF;
-    color:white;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button-one {
+  border-radius: 2px;
+  background: #5068e2ff;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button-two{
-    border: 2px solid #5068E2FF;
-    border-radius: 2px;
-    background: white;
-    color: #5068E2FF;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button-two {
+  border: 1px solid #5068e2ff;
+  border-radius: 2px;
+  background: white;
+  color: #5068e2ff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav-container{
-    position: absolute;  
-    width: 100vw; 
-    height: 56px; 
-    display: flex;
-    position: sticky;
+.nav-container {
+  position: absolute;
+  width: 100vw;
+  height: 56px;
+  display: flex;
+  position: sticky;
 }
-
