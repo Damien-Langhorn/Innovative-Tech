@@ -11,54 +11,58 @@ import case1 from "./case-1.png";
 import case2 from "./case-2.png";
 import case3 from "./case-3.png";
 import case4 from "./case-4.png";
+import member1 from "./member-1.png";
+import member2 from "./member-2.png";
+import member3 from "./member-3.png";
 
 export const teamMembers = [
     {
         name: "Alice Wong",
         title: "Software Engineer",
         description: "Specializes in backend systems and API development with 5+ years of experience.",
-        image: "null"
+        image: member1
     },
     {
         name: "David Smith",
         title: "Product Designer",
-        description: "Expert in user experience nd interface design, passionate about creating intuitive products.",
-        image: "null"
+        description: "Expert in user experience and interface design, passionate about creating intuitive products.",
+        image: member2
     },
     {
         name: "Rachel Patel",
         title: "Data Scientist",
         description: "Focused on predictive analytics and machine learning applications in business.",
-        image: "null"
+        image: member3
     }
 ]
 
 
 export const serviceListings = [
+    
     {
         title:"Service Solutions",
         description:"Our comprehensive service solutions streamline operations, enhance efficiency, and drive innovation. From digital transformation to logistics optimization, we deliver smart strategies for every aspect of your business.",
-        benefits: "Access to cutting-edge technology, Streamlined processes,Enhanced productivity, Cost savings, Scalability and flexibility"
+        benefits: "Access to cutting-edge technology,Streamlined processes,Enhanced productivity, Cost savings, Scalability and flexibility"
     },
     {
         title:"Product Solutions",
-        description:"Our comprehensive service solutions streamline operations, enhance efficiency, and drive innovation. From digital transformation to logistics optimization, we deliver smart strategies for every aspect of your business.",
-        benefits: "Access to cutting-edge technology, Streamlined processes,Enhanced productivity, Cost savings, Scalability and flexibility"
+        description:"Our innovative product solutions encompass IoT, AI, cloud computing, and more, empowering your business with the tools needed to excel in a digital-first world.",
+        benefits: "Innovate to stay competitive, Increased operational efficiency, Improved customer experience, Data-driven decision making"
     },
     {
         title:"Finance Solutions",
-        description:"Our comprehensive service solutions streamline operations, enhance efficiency, and drive innovation. From digital transformation to logistics optimization, we deliver smart strategies for every aspect of your business.",
-        benefits: "Access to cutting-edge technology, Streamlined processes,Enhanced productivity, Cost savings, Scalability and flexibility"
+        description:"Our finance solutions optimize fiscal strategies, improve budgeting processes, and provide valuable financial insights.",
+        benefits: "Expertise in financial regulations, Tailored strategies for your business, Enhanced risk management processes, Improved financial performance and growth"
     },
     {
         title:"Logistics Solutions",
-        description:"Our comprehensive service solutions streamline operations, enhance efficiency, and drive innovation. From digital transformation to logistics optimization, we deliver smart strategies for every aspect of your business.",
-        benefits: "Access to cutting-edge technology, Streamlined processes,Enhanced productivity, Cost savings, Scalability and flexibility"
+        description:"Our logistics solutions revolutionize supply chain operations, optimize resource allocation, and enhance delivery processes.",
+        benefits: "Efficient supply chain management, Reduced operational costs, Enhanced visibility and control, Faster delivery times and improved customer satisfaction"
     },
     {
         title:"Marketing Solutions",
-        description:"Our comprehensive service solutions streamline operations, enhance efficiency, and drive innovation. From digital transformation to logistics optimization, we deliver smart strategies for every aspect of your business.",
-        benefits: "Access to cutting-edge technology, Streamlined processes,Enhanced productivity, Cost savings, Scalability and flexibility"
+        description:"Our marketing solutions enhance brand visibility, improve online presence, and drive customer engagement through innovative strategies.",
+        benefits: "Enhanced online visibility, Increased website traffic, Improved lead generation and conversion, Better customer engagement and retention"
     }
 ]
 

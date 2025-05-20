@@ -22,20 +22,20 @@ const Services = () => {
 
       <Navbar />
 
-      <h1 className='flex justify-center font-bold text-3xl pt-8'>Tech Solutions Overview</h1>
-      <p className='flex justify-center text-center text-gray-500 pt-4 px-8'>Introducing our diverse range of cutting-edge tech solutions, designed to empower your business and drive
-        innovationn. From web development to automation, discover how we can transform your digital landscape.
+      <h1 className='flex justify-center font-bold text-4xl pt-16'>Tech Solutions Overview</h1>
+      <p className='flex justify-center text-center text-gray-500 pt-4 px-8 max-w-300 m-auto'>Introducing our diverse range of cutting-edge tech solutions, designed to empower your business and drive
+        innovation. From web development to automation, discover how we can transform your digital landscape.
       </p>
       <img className='pt-4 flex justify-center px-10 max-h-150 m-auto'src={serviceImage} alt='Image'/>
 
-      <h1 className='flex justify-center font-bold pt-16 text-3xl'>Service Listings</h1>
-      <h2 className='text-left font-bold text-2xl pt-4 px-8'>Solutions for Every Industry</h2>
-      <p className='text-gray-500 text-left pt-2 px-8'>We provide innovative tech solutions tailored to various industries. Our expertise spans diverse domains, ensuring we meet your unique business requirements with excellence.</p>
+      <h1 className='flex justify-center font-bold pt-32 text-2xl'>Service Listings</h1>
+      <h2 className='text-left font-bold text-xl pt-4 px-8 max-w-300 m-auto'>Solutions for Every Industry</h2>
+      <p className='text-gray-500 text-left pt-2 px-8 max-w-300 m-auto'>We provide innovative tech solutions tailored to various industries. Our expertise spans diverse domains, ensuring we meet your unique business requirements with excellence.</p>
         
-      <div className='grid grid-cols-1 px-8'>
+      <div className='grid grid-cols-1 px-8 m-auto max-w-300'>
         {serviceListings.map((listing) => (
           <div key={listing.title} className='text-left pt-8'>
-            <h2 className='font-bold text-2xl'>{listing.title}</h2>
+            <h2 className='font-bold text-xl'>{listing.title}</h2>
             <p className='text-gray-500 text-left pt-2'>{listing.description}</p>
             <h2 className='text-xl pt-2'>Key Benefits:</h2>
             <p className='text-gray-500 pt-2 text-left'>{listing.benefits}</p>
@@ -43,9 +43,9 @@ const Services = () => {
         ))}
       </div>
 
-      <h1 className='flex justify-center font-bold text-3xl pt-8'>Hear from our awesome users!</h1>
+      <h1 className='flex justify-center font-bold text-2xl pt-32'>Hear from our awesome users!</h1>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-16 m-auto'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-16 m-auto max-w-300'>
         {visibleCards.map((member, idx) => (
           <div key={member.name + idx} className='text-center border-2 border-gray-300 rounded-lg p-4 shadow-lg'>
             <div className='flex justify-space-between items-center gap-3'>
@@ -73,10 +73,10 @@ const Services = () => {
           </button>
         </div>
 
-        <div className='grid grid-cols-1 bg-gray-100 shadow-lg px-8 py-16 w-fit m-auto mt-10'>
+        <div className='grid grid-cols-1 bg-gray-100 p-16 max-w-250 m-auto mt-32'>
           <div>
             <h1 className='flex justify-center text-blue-400 font-bold text-3xl'>Transform Your Business</h1>
-            <p className='flex justify-center text-center p-2'>Unlock your potential with our cutting edge solutions. Take the first steo toward innovation today!</p>
+            <p className='flex justify-center text-center p-2'>Unlock your potential with our cutting edge solutions. Take the first step toward innovation today!</p>
             <div className='flex justify-center pt-4'>
               <button className='button-one h-13 w-32'>Get started</button>
             </div>
