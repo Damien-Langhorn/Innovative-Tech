@@ -4,6 +4,7 @@ import { serviceListings } from '../../assets'
 import { testimonials } from '../../assets'
 import { FaStar, FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import  serviceImage  from '../../assets/service-image.png'
+import Footer from '../Footer'
 
 
 const CARDS_TO_SHOW = 3;
@@ -29,7 +30,7 @@ const Services = () => {
       <img className='pt-4 flex justify-center px-10 max-h-150 m-auto'src={serviceImage} alt='Image'/>
 
       <h1 className='flex justify-center font-bold pt-32 text-2xl'>Service Listings</h1>
-      <h2 className='text-left font-bold text-xl pt-4 px-8 max-w-300 m-auto'>Solutions for Every Industry</h2>
+      <h2 className='text-left font-bold text-xl pt-8 px-8 max-w-300 m-auto'>Solutions for Every Industry</h2>
       <p className='text-gray-500 text-left pt-2 px-8 max-w-300 m-auto'>We provide innovative tech solutions tailored to various industries. Our expertise spans diverse domains, ensuring we meet your unique business requirements with excellence.</p>
         
       <div className='grid grid-cols-1 px-8 m-auto max-w-300'>
@@ -84,7 +85,7 @@ const Services = () => {
         </div>  
 
       
-
+        <Footer />
 
     </section>
   )

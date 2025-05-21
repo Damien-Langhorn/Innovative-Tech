@@ -22,9 +22,6 @@
 }
 
 .nav-container {
-  position: absolute;
   width: 100vw;
   height: 56px;
-  display: flex;
-  position: sticky;
 }

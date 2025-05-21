@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar';
 import HeroImage from '../../assets/Hero-Image.png'
 import { teamMembers } from '../../assets';
+import Footer from '../Footer';
 
 const Hero = () => {
   return (
@@ -43,6 +44,8 @@ const Hero = () => {
                   </div>
                 ))}
               </div>
+
+              <Footer />
 
     </section>
 

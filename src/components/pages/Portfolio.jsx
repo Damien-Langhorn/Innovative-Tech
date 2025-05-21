@@ -3,6 +3,7 @@ import Navbar from '../Navbar'
 import { portfolio } from '../../assets'
 import { caseStudies } from '../../assets'
 import portfolioImage from '../../assets/portfolio-image.png'
+import Footer from '../Footer'
 
 const Portfolio = () => {
   return (
@@ -46,6 +47,8 @@ const Portfolio = () => {
                   </div>
                 ))}
               </div>
+
+              <Footer />
       
     </section>
   )
