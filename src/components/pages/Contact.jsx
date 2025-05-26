@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../Navbar'
-import contactImage from '../../assets/contact.png'
+import contactImage from '../../assets/contact.webp'
 import Footer from '../Footer'
 
 const Contact = () => {
+
+
+  useEffect(() => {
+   window.scrollTo(0, 0);
+  }, []);
+
   const [form, setForm] = useState({ name: '', email: '', company: '', companySize: '', topic: '', message: '' })
 
   const handleChange = (e) => {
@@ -18,14 +24,16 @@ const Contact = () => {
   } 
 
   return (
-    <section>
+    <section className='overflow-x-hidden'>
       <Navbar />
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 px-8 pb-16 max-w-300 m-auto'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 px-8 py-16 max-w-300 m-auto'>
 
          <div className='mt-8 p-8'>
           <h1 className='text-4xl font-bold text-center'>Contact Us!</h1>
           <p className='text-gray-500 text-center pt-4'>Please fill out the form to get in touch.</p>
-          <img className='pt-4 flex justify-center max-h-150 m-auto' src={contactImage} alt='Contact Image'/>
+          <img
+          fetchPriority='high' 
+          className='pt-4 flex justify-center w-[1000px] sm:w-[350px] max-h-150 m-auto' src={contactImage} alt='Contact Image'/>
         </div>
 
         <div className="mt-8 p-8">
@@ -122,17 +130,17 @@ const Contact = () => {
         View on Google Maps
         </a>
 
-        <div className="mt-8 flex justify-center px-10">
+        <div className="mt-8 flex justify-center px-8">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6045.8688153891435!2d-74.0033873!3d40.7414688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle%20NYC%20-%209th%20Avenue!5e0!3m2!1sen!2sus!4v1747781734405!5m2!1sen!2sus" 
             width="600"
-            height="400"
+            height="300"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Our Location"
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg max-w-300"
           ></iframe>
         </div>
 

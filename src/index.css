@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+@theme {
+  --color-blue-150: #5068e2ff;
+  --color-blue-1: #caf0f8;
+  --color-blue-2: #90e0ef;
+  --color-blue-3: #00b4d8;
+  --color-blue-4: #0077b6;
+  --color-blue-5: #03045e;
+  --font-family-sans: "Crimson Pro", serif;
+  --font-family-sansSarif: "Albert Sans", sans-serif;
+}
+
+* {
+  font-family: var(--font-family-sans);
+}
+
+p,
+ul,
+li {
+  font-family: var(--font-family-sansSarif);
+}
+
 .button-one {
   border-radius: 2px;
   background: #5068e2ff;
@@ -13,8 +34,6 @@
 .button-two {
   border: 1px solid #5068e2ff;
   border-radius: 2px;
-  background: white;
-  color: #5068e2ff;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -24,4 +43,20 @@
 .nav-container {
   width: 100vw;
   height: 56px;
+}
+
+.card-container {
+  cursor: pointer;
+  width: auto;
+}
+
+.card {
+  height: 350px;
+  flex: 1;
+  transition: 0.3s;
+  margin: 0 5px;
+}
+
+.card:hover {
+  flex: 4;
 }

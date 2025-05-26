@@ -1,22 +1,43 @@
-import React from 'react'
+import React, { useRef} from 'react'
 import { FaFacebook, FaLinkedin } from 'react-icons/fa'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.webp'
+
 
 const Footer = () => {
+
+  const emailRef = useRef(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!emailRef.current.value) {
+      emailRef.current.focus();
+      return;
+    }
+    // Handle subscribe logic here
+    alert('Subscribed!');
+    emailRef.current.value = '';
+  };
+
+
   return (
     <div className='bg-black h-auto w-auto pb-8 mt-16'>
        
             <h1 className='flex justify-center font-bold text-white text-xl pt-16'>Subscribe to our newsletter! </h1>
             <div className='flex justify-center items-center mt-2'>
-             <input
+            <form onSubmit={handleSubmit}>
+              <input
+                ref={emailRef}
                 type="email"
-                 placeholder="Input your email"
-                 className='w-60  border-1 text-white border-gray-300 rounded-l-3xl p-2 bg-black focus:outline-none'
+                 placeholder="Email"
+                 className='w-auto  border-1  text-white border-gray-300 rounded-l-3xl p-2 bg-black focus:outline-none'
                  required
-            />
-            <button className='bg-blue-500 border-1 border-gray-300 text-white p-2 rounded-r-4xl hover:bg-blue-600'>
-             Subscribe
-            </button>
+              />
+              <button
+               type='submit'
+               className='bg-blue-500 border-1  border-gray-300 text-white p-2 rounded-r-4xl hover:bg-blue-600'>
+              Subscribe
+              </button>
+            </form>
             </div>
 
             <div className='flex justify-center items-center mt-8'>

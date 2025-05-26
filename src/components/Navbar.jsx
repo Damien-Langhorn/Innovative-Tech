@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
 const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='nav-container flex gap-8 sticky top-0 z-50 bg-white'>
+    <div className='nav-container flex gap-8 fixed top-0 z-50 bg-white'>
       <div className='flex items-center'>
         <img src={logo} alt='Logo' className='w-12 h-7'/>
         <h2 className='font-bold text-2xl'>Innovative Tech</h2>
