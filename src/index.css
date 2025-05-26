@@ -8,17 +8,10 @@
   --color-blue-4: #0077b6;
   --color-blue-5: #03045e;
   --font-family-sans: "Crimson Pro", serif;
-  --font-family-sansSarif: "Albert Sans", sans-serif;
 }
 
 * {
   font-family: var(--font-family-sans);
-}
-
-p,
-ul,
-li {
-  font-family: var(--font-family-sansSarif);
 }
 
 .button-one {
